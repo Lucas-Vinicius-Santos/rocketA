@@ -10,9 +10,15 @@ const Header: React.FC = () => {
         <IoRocketSharp className="icon" />A
       </Logo>
       <NavBar>
-        <span className="link--header">Home</span>
-        <span className="link--header">Conteúdo</span>
-        <span className="link--header">Sobre</span>
+        <a href="#home" className="link--header">
+          Home
+        </a>
+        <a href="#main" className="link--header">
+          Conteúdo
+        </a>
+        <a href="#footer" className="link--header">
+          Sobre
+        </a>
       </NavBar>
     </Menu>
   );

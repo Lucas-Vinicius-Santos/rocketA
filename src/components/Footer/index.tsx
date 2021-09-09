@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   AOS.init();
 
   return (
-    <Container>
+    <Container id="footer">
       <div>
         <strong data-aos="fade-left" data-aos-delay="100">
           React

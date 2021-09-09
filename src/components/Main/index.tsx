@@ -2,14 +2,14 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { Container, SectionOne, SectionTwo } from "./styles";
+import { Container, SectionHome, SectionContent } from "./styles";
 
 const Main: React.FC = () => {
   AOS.init();
 
   return (
     <Container>
-      <SectionOne>
+      <SectionHome id="home">
         <h1>
           <span>Acordar.</span>
           <span>Codar.</span>
@@ -19,9 +19,9 @@ const Main: React.FC = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quas
           tempora accusantium consequuntur fugiat libero doloremque molestias
         </h2>
-      </SectionOne>
+      </SectionHome>
 
-      <SectionTwo>
+      <SectionContent id="main">
         <p data-aos="fade-up">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
           voluptatem laudantium fugiat neque architecto iste perferendis eius et
@@ -42,9 +42,9 @@ const Main: React.FC = () => {
           alt=""
           data-aos="fade-left"
         />
-      </SectionTwo>
+      </SectionContent>
 
-      <SectionTwo>
+      <SectionContent>
         <img
           src="https://images.pexels.com/photos/2208207/pexels-photo-2208207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=500"
           alt=""
@@ -68,7 +68,7 @@ const Main: React.FC = () => {
           mollitia pariatur doloremque eaque, nulla quibusdam natus
           reprehenderit, error omnis voluptatum.
         </p>
-      </SectionTwo>
+      </SectionContent>
     </Container>
   );
 };

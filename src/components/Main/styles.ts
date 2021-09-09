@@ -11,7 +11,12 @@ const textCycle = keyframes`
   }
 `;
 
-export const SectionOne = styled.div`
+export const SectionHome = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   > h1 {
     user-select: none;
     display: flex;
@@ -47,18 +52,40 @@ export const SectionOne = styled.div`
   > h2 {
     font-size: 1.1rem;
     max-width: 60%;
-    margin: 5rem auto 0 auto;
+    margin: 0 auto 5rem auto;
     text-align: center;
     font-weight: 300;
   }
+
+  @media (max-width: 500px) {
+    > h1 {
+      line-height: 6rem;
+    }
+
+    > h2 {
+      margin: 0 auto 5rem auto;
+      text-align: center;
+    }
+  }
+  @media (max-width: 380px) {
+    > h1 {
+      font-size: 5rem;
+    }
+
+    > h2 {
+      margin: 0 auto 5rem auto;
+      text-align: center;
+    }
+  }
 `;
 
-export const SectionTwo = styled.div`
+export const SectionContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin: 30vh auto;
+  margin: 5vh auto 10vh auto;
+  overflow: hidden;
 
   > p {
     max-width: 400px;
@@ -70,5 +97,15 @@ export const SectionTwo = styled.div`
     width: 300px;
     height: 450px;
   }
+
+  @media (max-width: 1000px) {
+    margin: 5vh auto;
+    flex-direction: column;
+    gap: 5vh;
+
+    > img {
+      width: 260px;
+      height: 390px;
+    }
+  }
 `;
-// @types/aos
