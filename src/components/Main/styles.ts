@@ -85,7 +85,6 @@ export const SectionContent = styled.div`
   justify-content: space-between;
   width: 80%;
   margin: 5vh auto 10vh auto;
-  overflow: hidden;
 
   > p {
     max-width: 400px;
@@ -102,6 +101,7 @@ export const SectionContent = styled.div`
     margin: 5vh auto;
     flex-direction: column;
     gap: 5vh;
+    overflow: hidden;
 
     > img {
       width: 260px;

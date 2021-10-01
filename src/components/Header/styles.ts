@@ -7,7 +7,7 @@ export const Menu = styled.div`
   width: 100%;
   border-bottom: 1px solid var(--gray);
   padding: 0 20%;
-  /* position: fixed; */
+  position: fixed;
   z-index: 999;
   background: transparente;
   backdrop-filter: blur(4px);
